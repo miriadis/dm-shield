@@ -23,4 +23,5 @@ $(document).ready(function(){
     $('[data-cr-max]').toggle();
     $('[data-cr-hidden]').toggleAttr('disabled');
   });
+
 });
