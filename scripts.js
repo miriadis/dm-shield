@@ -1,4 +1,5 @@
 /* toggleAttr function by @mathiasbynens */
+
 jQuery.fn.toggleAttr = function(attr){
   return this.each(function(){
     var $this = $(this);
@@ -6,8 +7,11 @@ jQuery.fn.toggleAttr = function(attr){
   });
 };
 
+
 // CR Search
+
 $(document).ready(function(){
+
   // When selects change */
   $('[data-cr-min], [data-cr-max]').on('change', function(){
     // If the split CR checkbox isn't checked
@@ -22,6 +26,12 @@ $(document).ready(function(){
   $('[data-cr-split]').on('change', function(){
     $('[data-cr-max]').toggle();
     $('[data-cr-hidden]').toggleAttr('disabled');
+  });
+
+  $('[title]').tooltipster({
+    animation: 'grow',
+    delay: 100,
+    theme: 'tooltipster-shadow'
   });
 
 });

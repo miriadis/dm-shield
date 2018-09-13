@@ -4,13 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
   <script src="scripts.js"></script>
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/7.0.1/sanitize.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/themes/tooltipster-shadow.min.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
+
   <title>D&D 5th Edition Digital DM Shield</title>
 </head>
 <body>
+
+  <svg style="display: none;">
+    <symbol id="logo-dndb" viewBox="0 0 62 59" fill-rule="nonzero" fill="currentcolor" stroke="none">
+      <path d="M58.8,33.3c-2.2,-2.1 -5.1,-3.7 -8.9,-4.8c1.5,-0.4 2.9,-1 4.2,-1.8c1.3,-0.8 2.3,-1.6 3.2,-2.6c0.9,-1 1.6,-2 2,-3.1c0.5,-1 0.7,-2 0.7,-3l0,-1.9c0,-2.3 -0.5,-4.5 -1.6,-6.4c-1.1,-1.9 -2.6,-3.6 -4.6,-4.9c-2,-1.4 -4.8,-2.4 -7.6,-3.2c-2.8,-0.7 -5.9,-1.1 -9.3,-1.1l-27,0l-2.8,0l-5.2,0l5.2,5.4l0,18.4l-7.1,0l7.1,9.1l0,20.1l-5.2,5.4l36.8,0c6.9,0 12.9,-1.2 17.1,-3.7c4.2,-2.5 6.2,-6.1 6.2,-11l0,-3.3c0,-3 -1.1,-5.5 -3.2,-7.6Zm-34.7,-22l9.4,0c2.7,0 4.9,0.4 6.6,1.2c1.7,0.8 2.5,2.3 2.5,4.5l0,1.9c0,1.7 -0.6,3 -1.9,4c-1.3,1 -3,1.5 -5.2,1.5l-11.4,0l0,-13.1Zm20.5,31.2c0,1.2 -0.2,2.2 -0.7,2.9c-0.5,0.7 -1.1,1.3 -1.9,1.8c-0.8,0.4 -1.7,0.7 -2.8,0.9c-1.1,0.1 -2.2,0.2 -3.3,0.2l-11.8,0l0,-14.1l11.9,0c2.2,0 4.1,0.5 5.9,1.5c1.7,1 2.6,2.3 2.6,4l0,2.8l0.1,0Z"></path>
+    </symbol>
+  </svg>
+
   <div class="grid">
 
     <div class="grid__item">
@@ -20,51 +33,58 @@
         </div>
         <div class="block__body">
           <table>
+            <thead>
+              <tr>
+                <th>Feet</th>
+                <th>Meters</th>
+                <th>Squares</th>
+              </tr>
+            </thead>
             <tbody>
               <tr>
-                <td>5 <abbr title="feet">ft</abbr></td>
-                <td>1.52 <abbr title="meter">m</abbr></td>
-                <td>1 <abbr title="square">sq</abbr></td>
+                <td>5 <abbr class="unit" title="feet">ft</abbr></td>
+                <td>1,5 <abbr class="unit" title="meter">m</abbr></td>
+                <td>1 <abbr class="unit" title="square">sq</abbr></td>
               </tr>
               <tr>
-                <td>10 <abbr title="feet">ft</abbr></td>
-                <td>3.05 <abbr title="meters">m</abbr></td>
-                <td>2 <abbr title="squares">sq</abbr></td>
+                <td>10 <abbr class="unit" title="feet">ft</abbr></td>
+                <td>3,0 <abbr class="unit" title="meters">m</abbr></td>
+                <td>2 <abbr class="unit" title="squares">sq</abbr></td>
               </tr>
               <tr>
-                <td>15 <abbr title="feet">ft</abbr></td>
-                <td>4.57 <abbr title="meters">m</abbr></td>
-                <td>3 <abbr title="squares">sq</abbr></td>
+                <td>15 <abbr class="unit" title="feet">ft</abbr></td>
+                <td>4,6 <abbr class="unit" title="meters">m</abbr></td>
+                <td>3 <abbr class="unit" title="squares">sq</abbr></td>
               </tr>
               <tr>
-                <td>20 <abbr title="feet">ft</abbr></td>
-                <td>6.10 <abbr title="meters">m</abbr></td>
-                <td>4 <abbr title="squares">sq</abbr></td>
+                <td>20 <abbr class="unit" title="feet">ft</abbr></td>
+                <td>6,1 <abbr class="unit" title="meters">m</abbr></td>
+                <td>4 <abbr class="unit" title="squares">sq</abbr></td>
               </tr>
               <tr>
-                <td>25 <abbr title="feet">ft</abbr></td>
-                <td>7.62 <abbr title="meters">m</abbr></td>
-                <td>5 <abbr title="squares">sq</abbr></td>
+                <td>25 <abbr class="unit" title="feet">ft</abbr></td>
+                <td>7,6 <abbr class="unit" title="meters">m</abbr></td>
+                <td>5 <abbr class="unit" title="squares">sq</abbr></td>
               </tr>
               <tr>
-                <td>30 <abbr title="feet">ft</abbr></td>
-                <td>9.14 <abbr title="meters">m</abbr></td>
-                <td>6 <abbr title="squares">sq</abbr></td>
+                <td>30 <abbr class="unit" title="feet">ft</abbr></td>
+                <td>9,1 <abbr class="unit" title="meters">m</abbr></td>
+                <td>6 <abbr class="unit" title="squares">sq</abbr></td>
               </tr>
               <tr>
-                <td>60 <abbr title="feet">ft</abbr></td>
-                <td>18.29 <abbr title="meters">m</abbr></td>
-                <td>12 <abbr title="squares">sq</abbr></td>
+                <td>60 <abbr class="unit" title="feet">ft</abbr></td>
+                <td>18,3 <abbr class="unit" title="meters">m</abbr></td>
+                <td>12 <abbr class="unit" title="squares">sq</abbr></td>
               </tr>
               <tr>
-                <td>90 <abbr title="feet">ft</abbr></td>
-                <td>27.43 <abbr title="meters">m</abbr></td>
-                <td>18 <abbr title="squares">sq</abbr></td>
+                <td>90 <abbr class="unit" title="feet">ft</abbr></td>
+                <td>27,4 <abbr class="unit" title="meters">m</abbr></td>
+                <td>18 <abbr class="unit" title="squares">sq</abbr></td>
               </tr>
               <tr>
-                <td>120 <abbr title="feet">ft</abbr></td>
-                <td>36.58 <abbr title="meters">m</abbr></td>
-                <td>24 <abbr title="squares">sq</abbr></td>
+                <td>120 <abbr class="unit" title="feet">ft</abbr></td>
+                <td>36,6 <abbr class="unit" title="meters">m</abbr></td>
+                <td>24 <abbr class="unit" title="squares">sq</abbr></td>
               </tr>
             </tbody>
           </table>
@@ -74,12 +94,15 @@
 
     <div class="grid__item">
       <div class="block">
+        <div class="block__header">
+          Tests
+        </div>
         <div class="block__body">
           <table>
             <thead>
               <tr>
                 <th>Task Difficulty</th>
-                <th>DC</th>
+                <th><abbr title="Difficulty Class">DC</abbr></th>
               </tr>
             </thead>
             <tbody>
@@ -173,15 +196,59 @@
             <tbody>
               <tr>
                 <td>1/2</td>
-                <td>+2 to AC and Dexterity saving throws</td>
+                <td>+2 to <abbr title="Armor Class">AC</abbr> and <abbr class="as as--dex" title="Dexterity">DEX</abbr> saving throws</td>
               </tr>
               <tr>
                 <td>3/4</td>
-                <td>+5 to AC and Dexterity saving throws</td>
+                <td>+5 to <abbr title="Armor Class">AC</abbr> and <abbr class="as as--dex" title="Dexterity">DEX</abbr> saving throws</td>
               </tr>
               <tr>
                 <td>Total</td>
                 <td>Cannot be targeted directly</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Breaking stuff
+        </div>
+        <div class="block__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Material</th>
+                <th><abbr title="Difficulty Class">DC</abbr></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cloth, Paper, Rope</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>Crystal, Glass, Ice</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Wood, Bone</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Stone</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>Iron, Steel</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>Mithril</td>
+                <td>21</td>
               </tr>
             </tbody>
           </table>
@@ -206,23 +273,23 @@
             <tbody>
               <tr>
                 <td>Common</td>
-                <td><span class="dice">2d4+2</span></td>
-                <td><span class="price">50gp</span></td>
+                <td><span class="dice"><span class="dice__qty">2</span><span class="dice__type">d4</span><span class="dice__mod"><span class="dice__op">+</span>2</span></span></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
               </tr>
               <tr>
                 <td>Greater</td>
-                <td><span class="dice">4d4+4</span></td>
-                <td><span class="price">300gp</span></td>
+                <td><span class="dice"><span class="dice__qty">4</span><span class="dice__type">d4</span><span class="dice__mod"><span class="dice__op">+</span>4</span></span></td>
+                <td><span class="price">300 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
               </tr>
               <tr>
                 <td>Superior</td>
-                <td><span class="dice">8d4+8</span></td>
-                <td><span class="price">750gp</span></td>
+                <td><span class="dice"><span class="dice__qty">8</span><span class="dice__type">d4</span><span class="dice__mod"><span class="dice__op">+</span>8</span></span></td>
+                <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
               </tr>
               <tr>
                 <td>Supreme</td>
-                <td><span class="dice">10d4+20</span></td>
-                <td><span class="price">1500gp</span></td>
+                <td><span class="dice"><span class="dice__qty">10</span><span class="dice__type">d4</span><span class="dice__mod"><span class="dice__op">+</span>20</span></span></td>
+                <td><span class="price">1500 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
               </tr>
             </tbody>
           </table>
@@ -233,18 +300,77 @@
     <div class="grid__item">
       <div class="block">
         <div class="block__header">
+          Falling damage
+        </div>
+        <div class="block__body">
+          <p><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span> <span class="damage">bludgeoning</span> damage for every 10<abbr class="unit" title="feet">ft</abbr> fallen (max <span class="dice__qty">20</span><span class="dice__type">d6</span></span>), lands <span class="condition">prone</span>, unless it avoids taking damage from the fall.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Food & Water
+        </div>
+        <div class="block__body">
+          <p>A character can go 3 + <abbr class="as as--con" title="Constitution">CON</abbr> days (minimum 1) without food. After that, they suffer 1 level of exhaustion per day.</p>
+          <p>Drinking less than necessary requires a <span class="dc"><abbr title="Difficulty Class">DC</abbr>15</span> <abbr class="as as--con" title="Constitution">CON</abbr> saving throw. On a fail, suffer 1 level of exhaustion.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Ressurrection Spells
+        </div>
+        <div class="block__body">
+          <ul class="col-list">
+            <li class="col-list__item">
+              <a href="https://www.dndbeyond.com/spells/animate-dead" target="_blank">Animate Dead</a>
+            </li>
+            <li class="col-list__item">
+              <a href="https://www.dndbeyond.com/spells/revivify" target="_blank">Revivify</a>
+            </li>
+            <li class="col-list__item">
+              <a href="https://www.dndbeyond.com/spells/raise-dead" target="_blank">Raise Dead</a>
+            </li>
+            <li class="col-list__item">
+              <a href="https://www.dndbeyond.com/spells/reincarnate" target="_blank">Reincarnate</a>
+            </li>
+            <li class="col-list__item">
+              <a href="https://www.dndbeyond.com/spells/resurrection" target="_blank">Resurrection</a>
+            </li>
+            <li class="col-list__item">
+              <a href="https://www.dndbeyond.com/spells/true-resurrection" target="_blank">True Resurrection</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
           Monsters
+          <svg class="icon--tiny" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
         </div>
         <div class="block__body">
 
-          <form action="https://www.dndbeyond.com/monsters" method="get" target="_blank">
-            <input type="search" name="filter-search" value="" autocomplete="off" placeholder="Monster Name">
-            <input type="submit" value="Search by Name">
+          <form class="inline-form" action="https://www.dndbeyond.com/monsters" method="get" target="_blank">
+
+            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Monster Name">
+
+            <input class="inline-form__item" type="submit" value="Search by Name">
+
           </form>
 
-          <form action="https://www.dndbeyond.com/monsters" method="get" target="_blank">
-            <input type="checkbox" title="Split Min & Max" data-cr-split>
-            <select name="filter-cr-min" data-cr-min>
+          <form class="inline-form" action="https://www.dndbeyond.com/monsters" method="get" target="_blank">
+
+            <label class="inline-form__item inline-form__item--spaced"><input type="checkbox" title="Split Min & Max" data-cr-split></label>
+
+            <select class="inline-form__item inline-form__item--main inline-form__item--spaced" name="filter-cr-min" data-cr-min>
               <option value="0.001">0</</option>
               <option value="0.125">1/8</option>
               <option value="0.25">1/4</option>
@@ -280,8 +406,10 @@
               <option value="29">29</option>
               <option value="30">30</option>
             </select>
+
             <input type="hidden" name="filter-cr-max" value="" data-cr-hidden>
-            <select name="filter-cr-max" data-cr-max style="display: none;">
+
+            <select class="inline-form__item inline-form__item--main inline-form__item--spaced" name="filter-cr-max" data-cr-max style="display: none;">
               <option value="0.001">0</</option>
               <option value="0.125">1/8</option>
               <option value="0.25">1/4</option>
@@ -317,7 +445,57 @@
               <option value="29">29</option>
               <option value="30">30</option>
             </select>
+
             <input type="submit" value="Search by CR">
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Spells
+          <svg class="icon--tiny" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
+        </div>
+        <div class="block__body">
+
+          <form class="inline-form" action="https://www.dndbeyond.com/spells" method="get" target="_blank">
+
+            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Spell Name">
+
+            <input class="inline-form__item" type="submit" value="Search by Name">
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Items
+          <svg class="icon--tiny" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
+        </div>
+        <div class="block__body">
+
+          <form class="inline-form" action="https://www.dndbeyond.com/equipment" method="get" target="_blank">
+
+            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Equipment Name">
+
+            <input class="inline-form__item" type="submit" value="Search by Name">
+
+          </form>
+
+          <form class="inline-form" action="https://www.dndbeyond.com/magic-items" method="get" target="_blank">
+
+            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Magic Item Name">
+
+            <input class="inline-form__item" type="submit" value="Search by Name">
+
           </form>
 
         </div>
@@ -325,5 +503,266 @@
     </div>
 
   </div>
+
+  <div class="grid grid--full">
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Brewing Potions
+        </div>
+        <div class="block__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Potion Price</th>
+                <th>Plant</th>
+                <th>Plant Price</th>
+                <th>Region</th>
+                <th><abbr title="Difficulty Class">DC</abbr></th>
+                <th>Amount</th>
+                <th><abbr title="Quantity">Qty.</abbr></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Endure Elements</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Palma Eldath</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Mountains (Cold)</td>
+                <td>10</td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d10</span></span></td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>Remove Fear</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d10</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Climb</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Healing</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Healwell</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>All</td>
+                <td>12</td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
+                <td>14</td>
+              </tr>
+              <tr>
+                <td>Greater Healing</td>
+                <td><span class="price">300 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Healwell</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>All</td>
+                <td>12</td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td>Superior Healing</td>
+                <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Healwell</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>All</td>
+                <td>12</td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
+                <td>42</td>
+              </tr>
+              <tr>
+                <td>Supreme Healing</td>
+                <td><span class="price">1500 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Healwell</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>All</td>
+                <td>12</td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
+                <td>56</td>
+              </tr>
+              <tr>
+                <td>Hide from Undead</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Magic Fang</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Enlarge/Reduce Person</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Barkskin</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lesser Restoration</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Remove Paralysis</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Truth</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Tongues</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Flame Arrow (Oil)</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Neutralize Poison</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Remove Disease</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Water Breathing</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Rage</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Remove Curse</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Speed</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Revivify</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
