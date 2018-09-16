@@ -139,6 +139,46 @@
     <div class="grid__item">
       <div class="block">
         <div class="block__header">
+          Tracking
+        </div>
+        <div class="block__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Ground Surface</th>
+                <th><abbr title="Difficulty Class">DC</abbr></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Soft surface such as snow</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Dirt or grass</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Bare stone</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Each day since the creature passed</td>
+                <td>+5</td>
+              </tr>
+              <tr>
+                <td>Creature left a trail such as blood</td>
+                <td>-5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
           Exhaustion
         </div>
         <div class="block__body">
@@ -222,7 +262,7 @@
             <thead>
               <tr>
                 <th>Material</th>
-                <th><abbr title="Difficulty Class">DC</abbr></th>
+                <th><abbr title="Armor Class">AC</abbr></th>
               </tr>
             </thead>
             <tbody>
@@ -250,8 +290,136 @@
                 <td>Mithril</td>
                 <td>21</td>
               </tr>
+              <tr>
+                <td>Adamantine</td>
+                <td>23</td>
+              </tr>
             </tbody>
           </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Size</th>
+                <th>Fragile</th>
+                <th>Resilient</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiny</td>
+                <td>2 <abbr class="unit" title="hit points">hp</abbr> (<span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span>)</td>
+                <td>5 <abbr class="unit" title="hit points">hp</abbr> (<span class="dice"><span class="dice__qty">2</span><span class="dice__type">d4</span></span>)</td>
+              </tr>
+              <tr>
+                <td>Small</td>
+                <td>3 <abbr class="unit" title="hit points">hp</abbr> (<span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span>)</td>
+                <td>10 <abbr class="unit" title="hit points">hp</abbr> (<span class="dice"><span class="dice__qty">3</span><span class="dice__type">d6</span></span>)</td>
+              </tr>
+              <tr>
+                <td>Medium</td>
+                <td>4 <abbr class="unit" title="hit points">hp</abbr> (<span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span>)</td>
+                <td>18 <abbr class="unit" title="hit points">hp</abbr> (<span class="dice"><span class="dice__qty">4</span><span class="dice__type">d8</span></span>)</td>
+              </tr>
+              <tr>
+                <td>Large</td>
+                <td>5 <abbr class="unit" title="hit points">hp</abbr> (<span class="dice"><span class="dice__qty">1</span><span class="dice__type">d10</span></span>)</td>
+                <td>27 <abbr class="unit" title="hit points">hp</abbr> (<span class="dice"><span class="dice__qty">5</span><span class="dice__type">d10</span></span>)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Damage severity
+        </div>
+        <div class="block__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Level</th>
+                <th>Setback</th>
+                <th>Dangerous</th>
+                <th>Deadly</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1–4</td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d10</span></span></td>
+                <td><span class="dice"><span class="dice__qty">2</span><span class="dice__type">d10</span></span></td>
+                <td><span class="dice"><span class="dice__qty">4</span><span class="dice__type">d10</span></span></td>
+              </tr>
+              <tr>
+                <td>5–10</td>
+                <td><span class="dice"><span class="dice__qty">2</span><span class="dice__type">d10</span></span></td>
+                <td><span class="dice"><span class="dice__qty">4</span><span class="dice__type">d10</span></span></td>
+                <td><span class="dice"><span class="dice__qty">10</span><span class="dice__type">d10</span></span></td>
+              </tr>
+              <tr>
+                <td>11–16</td>
+                <td><span class="dice"><span class="dice__qty">4</span><span class="dice__type">d10</span></span></td>
+                <td><span class="dice"><span class="dice__qty">10</span><span class="dice__type">d10</span></span></td>
+                <td><span class="dice"><span class="dice__qty">18</span><span class="dice__type">d10</span></span></td>
+              </tr>
+              <tr>
+                <td>17–20</td>
+                <td><span class="dice"><span class="dice__qty">10</span><span class="dice__type">d10</span></span></td>
+                <td><span class="dice"><span class="dice__qty">18</span><span class="dice__type">d10</span></span></td>
+                <td><span class="dice"><span class="dice__qty">24</span><span class="dice__type">d10</span></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Travel pace
+        </div>
+        <div class="block__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Pace</th>
+                <th>Per minute</th>
+                <th>Per hour</th>
+                <th>Per day</th>
+                <th>Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Fast</td>
+                <td class="cell--space"><ruby>400 <abbr class="unit" title="feet">ft</abbr><rt>122<abbr title="meters">m</abbr></rt></ruby></td>
+                <td><ruby>4 <abbr class="unit" title="miles">mi</abbr><rt>6,4<abbr title="kilometers">km</abbr></rt></ruby></td>
+                <td><ruby>30 <abbr class="unit" title="miles">mi</abbr><rt>48,3<abbr title="kilometers">km</abbr></rt></ruby></td>
+                <td class="cell--detail">Perception -5</td>
+              </tr>
+              <tr>
+                <th>Normal</td>
+                <td class="cell--space"><ruby>300 <abbr class="unit" title="feet">ft</abbr><rt>91<abbr title="meters">m</abbr></rt></ruby></td>
+                <td><ruby>3 <abbr class="unit" title="miles">mi</abbr><rt>4,8<abbr title="kilometers">km</abbr></rt></ruby></td>
+                <td><ruby>24 <abbr class="unit" title="miles">mi</abbr><rt>38,6<abbr title="kilometers">km</abbr></rt></ruby></td>
+                <td class="cell--detail">–</td>
+              </tr>
+              <tr>
+                <th>Slow</td>
+                <td class="cell--space"><ruby>200 <abbr class="unit" title="feet">ft</abbr><rt>61<abbr title="meters">m</abbr></rt></ruby></td>
+                <td><ruby>2 <abbr class="unit" title="miles">mi</abbr><rt>3,2<abbr title="kilometers">km</abbr></rt></ruby></td>
+                <td><ruby>18 <abbr class="unit" title="miles">mi</abbr><rt>29<abbr title="kilometers">km</abbr></rt></ruby></td>
+                <td class="cell--detail">Can stealth</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Forced March.</strong> <span class="dc"><abbr title="Difficulty Class">DC</abbr>10</span> + 1 for each hour past 8 travel hours <abbr class="as as--con" title="Constitution">CON</abbr> saving throw. On a fail, suffer 1 level of exhaustion.</p>
+          <p><strong>Mounts and Vehicles.</strong> Ride at a gallop for about an hour, covering twice the usual distance.</p>
         </div>
       </div>
     </div>
@@ -303,7 +471,19 @@
           Falling damage
         </div>
         <div class="block__body">
-          <p><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span> <span class="damage">bludgeoning</span> damage for every 10<abbr class="unit" title="feet">ft</abbr> fallen (max <span class="dice__qty">20</span><span class="dice__type">d6</span></span>), lands <span class="condition">prone</span>, unless it avoids taking damage from the fall.</p>
+          <p><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span> <span class="damage">bludgeoning</span> damage for every <ruby>10<abbr class="unit" title="feet">ft</abbr><rt>3,0<abbr title="meters">m</abbr></rt></ruby> fallen (max <span class="dice__qty">20</span><span class="dice__type">d6</span></span>), lands <span class="condition">prone</span>, unless it avoids taking damage from the fall.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Suffocating
+        </div>
+        <div class="block__body">
+          <p>A creature can hold its breath for 1 + its <abbr class="as as--con" title="Constitution">CON</abbr> modifier minutes (minimum 30<abbr title="seconds">s</abbr>).</p>
+          <p>When out of breath or choking, it can survide for its <abbr class="as as--con" title="Constitution">CON</abbr> modifier rounds (minimum 1). It can't be stabilized or regain hit points until it can breath again.</p>
         </div>
       </div>
     </div>
@@ -326,7 +506,7 @@
           Ressurrection Spells
         </div>
         <div class="block__body">
-          <ul class="col-list">
+          <ul class="col-list col-list--six">
             <li class="col-list__item">
               <a href="https://www.dndbeyond.com/spells/animate-dead" target="_blank">Animate Dead</a>
             </li>
@@ -354,7 +534,7 @@
       <div class="block">
         <div class="block__header">
           Monsters
-          <svg class="icon--tiny" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
+          <svg class="icon--tiny icon--faded icon--dndb" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
         </div>
         <div class="block__body">
 
@@ -458,7 +638,7 @@
       <div class="block">
         <div class="block__header">
           Spells
-          <svg class="icon--tiny" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
+          <svg class="icon--tiny icon--faded icon--dndb" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
         </div>
         <div class="block__body">
 
@@ -478,7 +658,7 @@
       <div class="block">
         <div class="block__header">
           Items
-          <svg class="icon--tiny" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
+          <svg class="icon--tiny icon--faded icon--dndb" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
         </div>
         <div class="block__body">
 
