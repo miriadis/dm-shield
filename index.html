@@ -24,6 +24,8 @@
     </symbol>
   </svg>
 
+<div class="wrap">
+
   <div class="grid">
 
     <div class="grid__item">
@@ -692,6 +694,8 @@
           Brewing Potions
         </div>
         <div class="block__body">
+          <p>Requires a laboratory in town. Consumes the necessary plants plus half the potion price in other ingredients and materials. Each takes approximately the <abbr title="Difficulty Class">DC</abbr> &times; 5 minutes to brew.</p>
+
           <table>
             <thead>
               <tr>
@@ -700,9 +704,9 @@
                 <th>Plant</th>
                 <th>Plant Price</th>
                 <th>Region</th>
-                <th><abbr title="Difficulty Class">DC</abbr></th>
-                <th>Amount</th>
-                <th><abbr title="Quantity">Qty.</abbr></th>
+                <th><abbr title="Difficulty Class">DC</abbr> (Survival)</th>
+                <th>Harvest</th>
+                <th>Necessary</th>
               </tr>
             </thead>
             <tbody>
@@ -710,7 +714,7 @@
                 <td>Endure Elements</td>
                 <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>Palma Eldath</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td><span class="price">2 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>Mountains (Cold)</td>
                 <td>10</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d10</span></span></td>
@@ -719,28 +723,28 @@
               <tr>
                 <td>Remove Fear</td>
                 <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td>Pattran</td>
+                <td><span class="price">2 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Forest</td>
+                <td>10</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d10</span></span></td>
-                <td></td>
+                <td>15</td>
               </tr>
               <tr>
                 <td>Climb</td>
                 <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td>Laumspur</td>
+                <td><span class="price">3 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Caves (Underdark)</td>
+                <td>12</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
-                <td></td>
+                <td>14</td>
               </tr>
               <tr>
                 <td>Healing</td>
                 <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>Healwell</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td><span class="price">3 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>All</td>
                 <td>12</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
@@ -750,7 +754,7 @@
                 <td>Greater Healing</td>
                 <td><span class="price">300 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>Healwell</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td><span class="price">3 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>All</td>
                 <td>12</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
@@ -760,7 +764,7 @@
                 <td>Superior Healing</td>
                 <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>Healwell</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td><span class="price">3 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>All</td>
                 <td>12</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
@@ -770,7 +774,7 @@
                 <td>Supreme Healing</td>
                 <td><span class="price">1500 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>Healwell</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td><span class="price">3 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
                 <td>All</td>
                 <td>12</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
@@ -779,162 +783,162 @@
               <tr>
                 <td>Hide from Undead</td>
                 <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td>Laishaberries</td>
+                <td><span class="price">3 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Swamp</td>
+                <td>12</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
-                <td></td>
+                <td>15</td>
               </tr>
               <tr>
                 <td>Magic Fang</td>
                 <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td>Leopard's Bane</td>
+                <td><span class="price">3 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Grassland</td>
+                <td>12</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
-                <td></td>
+                <td>14</td>
               </tr>
               <tr>
                 <td>Enlarge/Reduce Person</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
-                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span></td>
-                <td></td>
+                <td><span class="price">250 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Jaffray</td>
+                <td><span class="price">14 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Desert</td>
+                <td>14</td>
+                <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d8</span></span></td>
+                <td>14</td>
               </tr>
               <tr>
                 <td>Barkskin</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">300 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Ironhard</td>
+                <td><span class="price">17 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Hills</td>
+                <td>15</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span></td>
-                <td></td>
+                <td>15</td>
               </tr>
               <tr>
                 <td>Lesser Restoration</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">300 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Mountain Garlick</td>
+                <td><span class="price">18 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Mountains (Cold)</td>
+                <td>15</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span></td>
-                <td></td>
+                <td>16</td>
               </tr>
               <tr>
                 <td>Remove Paralysis</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">300 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Orach</td>
+                <td><span class="price">17 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Forest</td>
+                <td>15</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span></td>
-                <td></td>
+                <td>14</td>
               </tr>
               <tr>
                 <td>Truth</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">600 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Olus Veritis</td>
+                <td><span class="price">37 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Rivers</td>
+                <td>17</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
-                <td></td>
+                <td>16</td>
               </tr>
               <tr>
                 <td>Tongues</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Hart's Tongue</td>
+                <td><span class="price">46 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Forest (Rainy)</td>
+                <td>20</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
-                <td></td>
+                <td>15</td>
               </tr>
               <tr>
                 <td>Flame Arrow (Oil)</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Kelventari</td>
+                <td><span class="price">45 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Desert</td>
+                <td>20</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
-                <td></td>
+                <td>15</td>
               </tr>
               <tr>
                 <td>Neutralize Poison</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Land Caltrops</td>
+                <td><span class="price">45 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Forest (Rainy)</td>
+                <td>20</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
-                <td></td>
+                <td>16</td>
               </tr>
               <tr>
                 <td>Remove Disease</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Lungwort</td>
+                <td><span class="price">45 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Caves (Damp)</td>
+                <td>20</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
-                <td></td>
+                <td>15</td>
               </tr>
               <tr>
                 <td>Water Breathing</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Maruera</td>
+                <td><span class="price">46 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Mountains (Rainy)</td>
+                <td>20</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
-                <td></td>
+                <td>15</td>
               </tr>
               <tr>
                 <td>Rage</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Nightcall</td>
+                <td><span class="price">46 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Desert</td>
+                <td>20</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
-                <td></td>
+                <td>15</td>
               </tr>
               <tr>
                 <td>Remove Curse</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">750 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Pallast</td>
+                <td><span class="price">45 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Swamp</td>
+                <td>20</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
-                <td></td>
+                <td>16</td>
               </tr>
               <tr>
                 <td>Speed</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">1500 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Larnurma</td>
+                <td><span class="price">180 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Jungle</td>
+                <td>25</td>
                 <td><span class="dice"><span class="dice__qty">1</span><span class="dice__type">d4</span></span></td>
-                <td></td>
+                <td>16</td>
               </tr>
               <tr>
                 <td>Revivify</td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
-                <td></td>
-                <td></td>
+                <td><span class="price">1500 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Pargen</td>
+                <td><span class="price">180 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Jungle</td>
+                <td>30</td>
                 <td>1</td>
-                <td></td>
+                <td>8</td>
               </tr>
             </tbody>
           </table>
@@ -943,6 +947,8 @@
     </div>
 
   </div>
+
+</div>
 
 </body>
 </html>

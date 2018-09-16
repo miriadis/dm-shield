@@ -39,9 +39,13 @@ textarea {
   font-size: var(--font-size-m);
 }
 
-body {
+body,
+html {
   background-color: var(--color-light);
   color: var(--color-dark);
+}
+
+body {
   padding: var(--gap-m);
 }
 
@@ -75,6 +79,7 @@ p {
 }
 
 p + p,
+p + table,
 table + p,
 table + table {
   margin-top: var(--gap-m);
