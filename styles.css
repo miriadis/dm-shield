@@ -222,6 +222,7 @@ input[type="submit"] {
   align-items: center;
   border-bottom: 1px solid var(--color-light);
   display: flex;
+  font-size: var(--font-size-m);
   font-variant: all-small-caps;
   font-weight: 700;
   justify-content: space-between;
