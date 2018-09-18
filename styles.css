@@ -196,7 +196,7 @@ input[type="submit"] {
   column-gap: var(--gap-xxs);
 }
 
-.grid--wide {
+.grid--half {
   columns: 2;
 }
 
