@@ -292,3 +292,48 @@ tbody th {
 tr + tr {
   border-top: 1px solid var(--color-light);
 }
+
+
+/* Areas */
+
+.areas {
+  display: grid;
+  grid-gap: var(--gap-m);
+  grid-template-columns: 1fr 1fr;
+}
+
+.areas__item {
+  margin: 0;
+  position: relative;
+}
+
+.areas__legend {
+  font-weight: 700;
+  padding: var(--gap-xs);
+  position: absolute;
+}
+
+.areas__content {
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' stroke='#ebebd3' fill='none' width='20' height='20'><rect class='area__pattern' x='0' y='0' width='10' height='10'></rect></svg>") repeat center center;
+  border: 1px solid var(--color-light);
+  height: 180px;
+  min-width: 180px;
+  width: 100%;
+}
+
+.areas__circle,
+.areas__translation {
+  fill: none;
+}
+
+.areas__reference {
+  fill: var(--color-light);
+}
+
+.areas__circle {
+  stroke: var(--color-dnd);
+}
+
+.areas__translation {
+  stroke: var(--color-dark);
+}

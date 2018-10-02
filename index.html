@@ -97,6 +97,37 @@
     <div class="grid__item">
       <div class="block">
         <div class="block__header">
+          Common circle areas
+        </div>
+        <div class="block__body">
+
+          <div class="areas">
+            <figure class="areas__item">
+              <figcaption class="areas__legend">5 <abbr class="unit" title="feet">ft</abbr></figcaption>
+              <svg class="areas__content" viewbox="0 0 90 90">
+                <rect class="areas__reference" x="40" y="40" width="10" height="10"></rect>
+                <circle class="areas__circle" cx="45" cy="45" r="10"></circle>
+                <path class="areas__translation" x="20" y="20" d="M 40 30 L 50 30 L 50 40 L 60 40 L 60 50 L 50 50 L 50 60 L 40 60 L 40 50 L 30 50 L 30 40 L 40 40 Z"></path>
+              </svg>
+            </figure>
+
+            <figure class="areas__item">
+              <figcaption class="areas__legend">10 <abbr class="unit" title="feet">ft</abbr></figcaption>
+              <svg class="areas__content" viewbox="0 0 90 90">
+                <rect class="areas__reference" x="40" y="40" width="10" height="10"></rect>
+                <circle class="areas__circle" cx="45" cy="45" r="20"></circle>
+                <path class="areas__translation" x="20" y="20" d="M 40 20 L 50 20 L 50 30 L 60 30 L 60 40 L 70 40 L 70 50 L 60 50 L 60 60 L 50 60 L 50 70 L 40 70 L 40 60 L 30 60 L 30 50 L 20 50 L 20 40 L 30 40 L 30 30 L 40 30 Z"></path>
+              </svg>
+            </figure>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
           Tests
         </div>
         <div class="block__body">
@@ -735,6 +766,156 @@
     <div class="grid__item">
       <div class="block">
         <div class="block__header">
+          Conditions
+        </div>
+        <div class="block__body">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Blinded</td>
+                <td>
+                  <ul>
+                    <li>Can't see and automatically fails any ability check that requires sight.</li>
+                    <li>Hostile attack rolls have advantage, own attack rolls have disadvantage.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Charmed</td>
+                <td>
+                  <ul>
+                    <li>Can't attack the charmer or target the charmer with harmful abilities or magical effects.</li>
+                    <li>The charmer has advantage on any ability check to interact socially with the creature.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Deafened</td>
+                <td>
+                  <ul>
+                    <li>Can't hear and automatically fails any ability check that requires hearing.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Frightened</td>
+                <td>
+                  <ul>
+                    <li>Disadvantage on ability checks and attack rolls while the source of the fear visible.</li>
+                    <li>Can't willingly move closer to the source of the fear.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Incapacitated</td>
+                <td>
+                  <ul>
+                    <li>Can't take actions or reactions.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Invisible</td>
+                <td>
+                  <ul>
+                    <li>Impossible to see without the aid of magic or a special sense.</li>
+                    <li>Can be detected by any noise it makes or any tracks it leaves.</li>
+                    <li>Hostile attack rolls have disadvantage, own attack rolls have advantage.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Paralyzed</td>
+                <td>
+                  <ul>
+                    <li>Incapacitated, can't move or speak.</li>
+                    <li>Automatically fails <span class="as as-str"><abbr title="Strength">STR</abbr></span> and <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
+                    <li>Hostile attack rolls have advantage.</li>
+                    <li>Any hits taken within 5 <abbr class="unit" title="feet">ft</abbr> are critical.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Petrified</td>
+                <td>
+                  <ul>
+                    <li>Transformed along with any nonmagical equipment into a solid inanimate substance.</li>
+                    <li>Weight increased by a factor of ten.</li>
+                    <li>Stops aging.</li>
+                    <li>Incapacitated, can't move or speak, unaware of the surroundings.</li>
+                    <li>Hostile attack rolls have advantage.</li>
+                    <li>Automatically fails <span class="as as-str"><abbr title="Strength">STR</abbr></span> and <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
+                    <li>Resistance to all damage.</li>
+                    <li>Immune to future poison and disease. Current poison or disease suspended.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Poisoned</td>
+                <td> <ul>
+                    <li>Disadvantage on attack rolls and ability checks.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Prone</td>
+                <td>
+                  <ul>
+                    <li>Can only crawl at half speed.</li>
+                    <li>Disadvantage on attack rolls.</li>
+                    <li>Hostile attack rolls from more than 5 <abbr class="unit" title="feet">ft</abbr> away have disadvantage.</li>
+                    <li>Hostile attack rolls within 5 <abbr class="unit" title="feet">ft</abbr> have advantage.</li>
+                    <li>Half movement to stand up.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Restrained</td>
+                <td>
+                  <ul>
+                    <li>Speed becomes 0, and it can't benefit from any bonus to its speed.</li>
+                    <li>Hostile attack rolls have advantage, own attack rolls have disadvantage.</li>
+                    <li>Disadvantage <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Stunned</td>
+                <td>
+                  <ul>
+                    <li>Incapacitated, can't move, and can speak only falteringly.</li>
+                    <li>Automatically fails <span class="as as-str"><abbr title="Strength">STR</abbr></span> and <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
+                    <li>Hostile attack rolls have advantage.</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Unconscious</td>
+                <td>
+                  <ul>
+                    <li>Incapacitated, can't move or speak, unaware of the surroundings.</li>
+                    <li>Drops everything and falls prone.</li>
+                    <li>Automatically fails <span class="as as-str"><abbr title="Strength">STR</abbr></span> and <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
+                    <li>Hostile attack rolls have advantage.</li>
+                    <li>Any hits taken within 5 <abbr class="unit" title="feet">ft</abbr> are critical.</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
           Brewing Potions
         </div>
         <div class="block__body">
@@ -990,160 +1171,193 @@
       </div>
     </div>
 
-  </div>
-
-  <div class="grid grid--half">
-
+    <!--
     <div class="grid__item">
       <div class="block">
         <div class="block__header">
-          Conditions
+          Crafting Poison
         </div>
         <div class="block__body">
+          <p><strong>Harvesting.</strong> Must succeed on a <span class="dc"><abbr title="Difficulty Class">DC</abbr>20</span> <span class="skill">Nature</span> check to spend <span class="dice"><span class="dice__qty">1</span><span class="dice__type">d6</span></span> minutes harvesting 1 dose of poison from a dead or <span class="condition">incapacitated</span> poisonous creature.</p>
           <table>
             <thead>
               <tr>
                 <th>Name</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Ingredient Rarity</th>
+                <th>Ingredient Cost</th>
+                <th>Maximum Doses</th>
+                <th>Crafting Time</th>
+                <th>Crafting DC</th>
                 <th>Effect</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Blinded</td>
-                <td>
-                  <ul>
-                    <li>Can't see and automatically fails any ability check that requires sight.</li>
-                    <li>Hostile attack rolls have advantage, own attack rolls have disadvantage.</li>
-                  </ul>
-                </td>
+                <td>Assassin’s Blood</td>
+                <td>Ingested</td>
+                <td><span class="price">150 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Common</td>
+                <td><span class="price">50 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>3</td>
+                <td>2 <abbr class="unit" title="hours">h</abbr></td>
+                <td>10</td>
+                <td>A creature subjected to this poison must make a DC 10 Constitution saving throw. On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours. On a successful save, the creature takes half damage and isn’t poisoned.</td>
               </tr>
               <tr>
-                <td>Charmed</td>
-                <td>
-                  <ul>
-                    <li>Can't attack the charmer or target the charmer with harmful abilities or magical effects.</li>
-                    <li>The charmer has advantage on any ability check to interact socially with the creature.</li>
-                  </ul>
-                </td>
+                <td>Burnt Othur Fumes</td>
+                <td>Inhaled</td>
+                <td><span class="price">500 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Rare</td>
+                <td><span class="price">250 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>1</td>
+                <td>1 <abbr class="unit" title="hour">h</abbr></td>
+                <td>13</td>
+                <td>A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage, and must repeat the saving throw at the start of each of its turns. On each successive failed save, the character takes 3 (1d6) poison damage. After three successful saves, the poison ends.</td>
               </tr>
               <tr>
-                <td>Deafened</td>
-                <td>
-                  <ul>
-                    <li>Can't hear and automatically fails any ability check that requires hearing.</li>
-                  </ul>
-                </td>
+                <td>Carrion Crawler Mucus</td>
+                <td>Contact</td>
+                <td><span class="price">200 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Uncommon</td>
+                <td><span class="price">75 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>4</td>
+                <td>8 <abbr class="unit" title="hours">h</abbr></td>
+                <td>13</td>
+                <td>This poison must be harvested from a dead or incapacitated carrion crawler. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. The poisoned creature is paralyzed. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</td>
               </tr>
               <tr>
-                <td>Frightened</td>
-                <td>
-                  <ul>
-                    <li>Disadvantage on ability checks and attack rolls while the source of the fear visible.</li>
-                    <li>Can't willingly move closer to the source of the fear.</li>
-                  </ul>
-                </td>
+                <td>Drow Poison</td>
+                <td>Injury</td>
+                <td><span class="price">200 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Uncommon</td>
+                <td><span class="price">75 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>6</td>
+                <td>4 <abbr class="unit" title="hours">h</abbr></td>
+                <td>13</td>
+                <td>This poison is typically made only by the drow, and only in a place far removed from sunlight. A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.</td>
               </tr>
               <tr>
-                <td>Incapacitated</td>
-                <td>
-                  <ul>
-                    <li>Can't take actions or reactions.</li>
-                  </ul>
-                </td>
+                <td>Essence of Ether</td>
+                <td>Inhaled</td>
+                <td><span class="price">300 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Uncommon</td>
+                <td><span class="price">150 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>2</td>
+                <td>8 <abbr class="unit" title="hours">h</abbr></td>
+                <td>15</td>
+                <td>A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage or if another creature takes an action to shake it awake.</td>
               </tr>
               <tr>
-                <td>Invisible</td>
-                <td>
-                  <ul>
-                    <li>Impossible to see without the aid of magic or a special sense.</li>
-                    <li>Can be detected by any noise it makes or any tracks it leaves.</li>
-                    <li>Hostile attack rolls have disadvantage, own attack rolls have advantage.</li>
-                  </ul>
-                </td>
+                <td>Malice</td>
+                <td>Inhaled</td>
+                <td><span class="price">250 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Uncommon</td>
+                <td><span class="price">100 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>4</td>
+                <td>1 <abbr class="unit" title="hour">h</abbr></td>
+                <td>15</td>
+                <td>A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour. The poisoned creature is blinded.</td>
               </tr>
               <tr>
-                <td>Paralyzed</td>
-                <td>
-                  <ul>
-                    <li>Incapacitated, can't move or speak.</li>
-                    <li>Automatically fails <span class="as as-str"><abbr title="Strength">STR</abbr></span> and <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
-                    <li>Hostile attack rolls have advantage.</li>
-                    <li>Any hits taken within 5 <abbr class="unit" title="feet">ft</abbr> are critical.</li>
-                  </ul>
-                </td>
+                <td>Midnight Tears</td>
+                <td>Ingested</td>
+                <td><span class="price">1500 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Legendary</td>
+                <td><span class="price">1000 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>1</td>
+                <td>1 <abbr class="unit" title="hour">h</abbr></td>
+                <td>17</td>
+                <td>A creature that ingests this poison suffers no effect until the stroke of midnight. If the poison has not been neutralized before then, the creature must succeed on a DC 17 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one.</td>
               </tr>
               <tr>
-                <td>Petrified</td>
-                <td>
-                  <ul>
-                    <li>Transformed along with any nonmagical equipment into a solid inanimate substance.</li>
-                    <li>Weight increased by a factor of ten.</li>
-                    <li>Stops aging.</li>
-                    <li>Incapacitated, can't move or speak, unaware of the surroundings.</li>
-                    <li>Hostile attack rolls have advantage.</li>
-                    <li>Automatically fails <span class="as as-str"><abbr title="Strength">STR</abbr></span> and <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
-                    <li>Resistance to all damage.</li>
-                    <li>Immune to future poison and disease. Current poison or disease suspended.</li>
-                  </ul>
-                </td>
+                <td>Oil of Taggit</td>
+                <td>Contact</td>
+                <td><span class="price">400 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Rare</td>
+                <td><span class="price">200 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>3</td>
+                <td>16 <abbr class="unit" title="hours">h</abbr></td>
+                <td>13</td>
+                <td>A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or become poisoned for 24 hours. The poisoned creature is unconscious. The creature wakes up if it takes damage.</td>
               </tr>
               <tr>
-                <td>Poisoned</td>
-                <td>
-                  <ul>
-                    <li>Disadvantage on attack rolls and ability checks.</li>
-                  </ul>
-                </td>
+                <td>Pale Tincture</td>
+                <td>Ingested</td>
+                <td><span class="price">250 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Uncommon</td>
+                <td><span class="price">100 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>6</td>
+                <td>24 <abbr class="unit" title="hours">h</abbr></td>
+                <td>16</td>
+                <td>A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become poisoned. The poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save. Until this poison ends, the damage the poison deals can’t be healed by any means. After seven successful saving throws, the effect ends and the creature can heal normally.</td>
               </tr>
               <tr>
-                <td>Prone</td>
-                <td>
-                  <ul>
-                    <li>Can only crawl at half speed.</li>
-                    <li>Disadvantage on attack rolls.</li>
-                    <li>Hostile attack rolls from more than 5 <abbr class="unit" title="feet">ft</abbr> away have disadvantage.</li>
-                    <li>Hostile attack rolls within 5 <abbr class="unit" title="feet">ft</abbr> have advantage.</li>
-                    <li>Half movement to stand up.</li>
-                  </ul>
-                </td>
+                <td>Purple Worm Poison</td>
+                <td>Injury</td>
+                <td><span class="price">2000 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Legendary</td>
+                <td><span class="price">1500 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>1</td>
+                <td>8 <abbr class="unit" title="hours">h</abbr></td>
+                <td>19</td>
+                <td>This poison must be harvested from a dead or incapacitated purple worm. A creature subjected to this poison must make a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one.</td>
               </tr>
               <tr>
-                <td>Restrained</td>
-                <td>
-                  <ul>
-                    <li>Speed becomes 0, and it can't benefit from any bonus to its speed.</li>
-                    <li>Hostile attack rolls have advantage, own attack rolls have disadvantage.</li>
-                    <li>Disadvantage <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
-                  </ul>
-                </td>
+                <td>Serpent Venom</td>
+                <td>Injury</td>
+                <td><span class="price">200 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Common</td>
+                <td><span class="price">75 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>6</td>
+                <td>1 <abbr class="unit" title="hour">h</abbr></td>
+                <td>11</td>
+                <td>This poison must be harvested from a dead or incapacitated giant poisonous snake. A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.</td>
               </tr>
               <tr>
-                <td>Stunned</td>
-                <td>
-                  <ul>
-                    <li>Incapacitated, can't move, and can speak only falteringly.</li>
-                    <li>Automatically fails <span class="as as-str"><abbr title="Strength">STR</abbr></span> and <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
-                    <li>Hostile attack rolls have advantage.</li>
-                  </ul>
-                </td>
+                <td>Torpor</td>
+                <td>Ingested</td>
+                <td><span class="price">600 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Rare</td>
+                <td><span class="price">250 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>4</td>
+                <td>4 <abbr class="unit" title="hours">h</abbr></td>
+                <td>15</td>
+                <td>A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 4d6 hours. The poisoned creature is incapacitated.</td>
               </tr>
               <tr>
-                <td>Unconscious</td>
-                <td>
-                  <ul>
-                    <li>Incapacitated, can't move or speak, unaware of the surroundings.</li>
-                    <li>Drops everything and falls prone.</li>
-                    <li>Automatically fails <span class="as as-str"><abbr title="Strength">STR</abbr></span> and <span class="as as-str"><abbr title="Dexterity">DEX</abbr></span> saving throws.</li>
-                    <li>Hostile attack rolls have advantage.</li>
-                    <li>Any hits taken within 5 <abbr class="unit" title="feet">ft</abbr> are critical.</li>
-                  </ul>
-                </td>
+                <td>Truth Serum</td>
+                <td>Ingested</td>
+                <td><span class="price">150 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Uncommon</td>
+                <td><span class="price">100 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>1</td>
+                <td>8 <abbr class="unit" title="hours">h</abbr></td>
+                <td>11</td>
+                <td>A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour. The poisoned creature can’t knowingly speak a lie, as if under the effect of a zone of truth spell.</td>
+              </tr>
+              <tr>
+                <td>Wyvern Poison</td>
+                <td>Injury</td>
+                <td><span class="price">1200 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>Very Rare</td>
+                <td><span class="price">600 <abbr class="unit" title="gold pieces">gp</abbr></span></td>
+                <td>3</td>
+                <td>2 <abbr class="unit" title="hours">h</abbr></td>
+                <td>15</td>
+                <td>This poison must be harvested from a dead or incapacitated wyvern. A creature subjected to this poison must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.</td>
               </tr>
             </tbody>
           </table>
+          <p><strong>Contact.</strong> Can be smeared on an object and remains potent until touched or washed off. Touching it with exposed skin applies the effects.</p>
+          <p><strong>Ingested.</strong> A creature must swallow an entire dose of ingested poison to suffer its effects. The dose can be delivered in food or a liquid. You might decide that a partial dose has a reduced effect, such as allowing advantage on the saving throw or dealing only half damage on a failed save.</p>
+          <p><strong>Inhaled.</strong> These poisons are powders or gases that take effect when they are inhaled. A single dose fills a 5 <abbr class="unit" title="feet">ft</abbr> cube.</p>
+          <p><strong>Injury.</strong> Injury poison can be applied to weapons, ammunition, trap components, and other objects that deal piercing or slashing damage and remains potent until delivered through a wound or washed off. A creature that takes piercing or slashing damage from an object coated with the poison is exposed to its effects.</p>
         </div>
       </div>
     </div>
+    -->
 
   </div>
 
