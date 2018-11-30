@@ -634,11 +634,13 @@
         <div class="block__body">
 
           <form class="inline-form" action="https://www.dndbeyond.com/monsters" method="get" target="_blank">
+            <input type="hidden" name="sort" value="cr">
             <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Monster Name">
             <input class="inline-form__item" type="submit" value="Search by Name">
           </form>
 
           <form class="inline-form" action="https://www.dndbeyond.com/monsters" method="get" target="_blank">
+            <input type="hidden" name="sort" value="cr">
             <label class="inline-form__item inline-form__item--spaced"><input type="checkbox" title="Split Min & Max" data-cr-split></label>
             <select class="inline-form__item inline-form__item--main inline-form__item--spaced" name="filter-cr-min" data-cr-min>
               <option value="1">0</</option>
@@ -729,6 +731,7 @@
         <div class="block__body">
 
           <form class="inline-form" action="https://www.dndbeyond.com/spells" method="get" target="_blank">
+            <input type="hidden" name="sort" value="level">
             <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Spell Name">
             <input class="inline-form__item" type="submit" value="Search by Name">
           </form>
