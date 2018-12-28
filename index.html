@@ -22,6 +22,11 @@
   <symbol id="logo-dndb" viewBox="0 0 62 59" fill-rule="nonzero" fill="currentcolor" stroke="none">
     <path d="M58.8,33.3c-2.2,-2.1 -5.1,-3.7 -8.9,-4.8c1.5,-0.4 2.9,-1 4.2,-1.8c1.3,-0.8 2.3,-1.6 3.2,-2.6c0.9,-1 1.6,-2 2,-3.1c0.5,-1 0.7,-2 0.7,-3l0,-1.9c0,-2.3 -0.5,-4.5 -1.6,-6.4c-1.1,-1.9 -2.6,-3.6 -4.6,-4.9c-2,-1.4 -4.8,-2.4 -7.6,-3.2c-2.8,-0.7 -5.9,-1.1 -9.3,-1.1l-27,0l-2.8,0l-5.2,0l5.2,5.4l0,18.4l-7.1,0l7.1,9.1l0,20.1l-5.2,5.4l36.8,0c6.9,0 12.9,-1.2 17.1,-3.7c4.2,-2.5 6.2,-6.1 6.2,-11l0,-3.3c0,-3 -1.1,-5.5 -3.2,-7.6Zm-34.7,-22l9.4,0c2.7,0 4.9,0.4 6.6,1.2c1.7,0.8 2.5,2.3 2.5,4.5l0,1.9c0,1.7 -0.6,3 -1.9,4c-1.3,1 -3,1.5 -5.2,1.5l-11.4,0l0,-13.1Zm20.5,31.2c0,1.2 -0.2,2.2 -0.7,2.9c-0.5,0.7 -1.1,1.3 -1.9,1.8c-0.8,0.4 -1.7,0.7 -2.8,0.9c-1.1,0.1 -2.2,0.2 -3.3,0.2l-11.8,0l0,-14.1l11.9,0c2.2,0 4.1,0.5 5.9,1.5c1.7,1 2.6,2.3 2.6,4l0,2.8l0.1,0Z"></path>
   </symbol>
+  <symbol id="homebrew" viewBox="0 0 24 24" fill-rule="nonzero" fill="none" stroke="currentcolor">
+    <path d="M10,6l0,4c0,0 -3.184,3.184 -4.913,4.913c-0.696,0.696 -1.087,1.64 -1.087,2.625c0,0 0,0 0,0c0,1.606 1.028,3.03 2.552,3.536c3.629,1.199 7.257,1.221 10.888,-0.004c1.518,-0.505 2.542,-1.925 2.542,-3.525c0.018,0 0.018,0 0.018,0c0,-0.989 -0.393,-1.938 -1.092,-2.637c-1.731,-1.731 -4.908,-4.908 -4.908,-4.908l0,-4" style="stroke-width:2px;"/>
+    <ellipse cx="12" cy="4.5" rx="3" ry="1.5" style="stroke-width:2px;"/>
+    <ellipse cx="12" cy="15" rx="6" ry="2" style="stroke-width:1px;"/>
+  </symbol>
   <symbol id="god-asmodeus" viewBox="0 0 24 24" style="fill: none; stroke: currentcolor; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round;">
     <desc>Three triangles in tight formation</desc>
     <path d="M3,5l3,12l3,-12l-6,0Z"></path>
@@ -652,13 +657,14 @@
       <div class="block">
         <div class="block__header">
           Grapple
+          <svg class="icon--tiny icon--faded icon--homebrew" title="Homebrew"><use xlink:href="#homebrew"></svg>
         </div>
         <div class="block__body">
           <p><strong>Premise.</strong> Use an Attack action to grapple a creature up to one size larger than you, within your reach.<p>
           <p><strong>Check.</strong> <span class="skill">Athletics</span> versus <span class="skill">Athletics</span> or <span class="skill">Acrobatics</span>.</p>
-          <p><strong>Grappled.</strong> Target's speed becomes 0, and it can't benefit from any bonus to its speed.</p>
-          <p><strong>Escaping.</strong> Target uses its action to roll the check again.</p>
-          <p><strong>Dragging.</strong> You can move with the grappled creature at half speed, unless it's two or more sizes smaller than you.</p>
+          <p><strong>Grappled.</strong> Target's speed becomes 0, it can't benefit from any bonus to its speed, and has disadvantage on attack rolls.</p>
+          <p><strong>Escaping.</strong> Target spends its action to roll the check again.</p>
+          <p><strong>Dragging.</strong> You can move with the grappled creature at half speed, or at normal speed if it's two or more sizes smaller than you.</p>
         </div>
       </div>
     </div>
@@ -667,6 +673,7 @@
       <div class="block">
         <div class="block__header">
           Passing through
+          <svg class="icon--tiny icon--faded icon--homebrew" title="Homebrew"><use xlink:href="#homebrew"></svg>
         </div>
         <div class="block__body">
           <p><strong>Overrun.</strong> <span class="skill">Athletics</span> versus <span class="skill">Athletics</span> to move through the target's space with an action or bonus action. Advantage if bigger than the target.</p>
@@ -679,10 +686,12 @@
       <div class="block">
         <div class="block__header">
           Shove
+          <svg class="icon--tiny icon--faded icon--homebrew" title="Homebrew"><use xlink:href="#homebrew"></svg>
         </div>
         <div class="block__body">
           <p><strong>Straight.</strong> <span class="skill">Athletics</span> versus <span class="skill">Athletics</span> or <span class="skill">Acrobatics</span> to knock a target (up to one size larger than you) <span class="condition">prone</span> or push it 5<abbr class="unit" title="feet">ft</abbr> away with an action.</p>
           <p><strong>Aside.</strong> Use shove with disadvantage to move the target to a space within reach.</p>
+          <p><strong>Getting up.</strong> If the shover is within reach, the target has no reaction until its next turn, and has disadvantage on attack rolls. The shover can also use its reaction to try shoving prone the target again.</p>
         </div>
       </div>
     </div>
@@ -1042,7 +1051,7 @@
                 <td>Prone</td>
                 <td>
                   <ul>
-                    <li>Can only crawl at half speed.</li>
+                    <li>Can only crawl (half speed).</li>
                     <li>Disadvantage on attack rolls.</li>
                     <li>Hostile attack rolls from more than 5<abbr class="unit" title="feet">ft</abbr> away have disadvantage.</li>
                     <li>Hostile attack rolls within 5<abbr class="unit" title="feet">ft</abbr> have advantage.</li>
