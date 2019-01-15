@@ -177,6 +177,13 @@ input[type="submit"] {
 }
 
 
+/* Tooltipster */
+
+.tooltipster-base {
+  white-space: nowrap;
+}
+
+
 /* Icons */
 
 .icon--tiny {
