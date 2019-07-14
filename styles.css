@@ -160,15 +160,6 @@ select {
   width: 100%;
 }
 
-.select {
-  position: relative;
-}
-.select:after {
-  content: "▾";
-  position: absolute;
-  right: 0;
-}
-
 button,
 input[type="submit"] {
   background: var(--color-dark);
