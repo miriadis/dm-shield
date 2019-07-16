@@ -78,6 +78,7 @@ abbr[title] {
   font-weight: 700;
   margin-left: var(--gap-xxs);
   vertical-align: .375em;
+  word-break: keep-all;
 }
 
 ul {
@@ -96,6 +97,7 @@ p {
 }
 
 p + p,
+p + form,
 p + table,
 table + p,
 table + table {
@@ -165,6 +167,16 @@ input[type="submit"] {
   background: var(--color-dark);
   color: white;
   font-variant: all-small-caps;
+}
+
+input[type="number"] {
+  text-align: right;
+}
+
+input[type="text"]:read-only,
+input[type="search"]:read-only,
+input[type="number"]:read-only {
+  background-color: rgba(235, 235, 211, .5);
 }
 
 

@@ -208,65 +208,40 @@
     <div class="grid__item">
       <div class="block">
         <div class="block__header">
-          Common measurements
+          Feet Converter
         </div>
         <div class="block__body">
-          <table>
-            <thead>
-              <tr>
-                <th>Feet</th>
-                <th>Meters</th>
-                <th>Squares</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>5<abbr class="unit" title="feet">ft</abbr></td>
-                <td>1,5<abbr class="unit" title="meter">m</abbr></td>
-                <td>1<abbr class="unit" title="square">sq</abbr></td>
-              </tr>
-              <tr>
-                <td>10<abbr class="unit" title="feet">ft</abbr></td>
-                <td>3,0<abbr class="unit" title="meters">m</abbr></td>
-                <td>2<abbr class="unit" title="squares">sq</abbr></td>
-              </tr>
-              <tr>
-                <td>15<abbr class="unit" title="feet">ft</abbr></td>
-                <td>4,6<abbr class="unit" title="meters">m</abbr></td>
-                <td>3<abbr class="unit" title="squares">sq</abbr></td>
-              </tr>
-              <tr>
-                <td>20<abbr class="unit" title="feet">ft</abbr></td>
-                <td>6,1<abbr class="unit" title="meters">m</abbr></td>
-                <td>4<abbr class="unit" title="squares">sq</abbr></td>
-              </tr>
-              <tr>
-                <td>25<abbr class="unit" title="feet">ft</abbr></td>
-                <td>7,6<abbr class="unit" title="meters">m</abbr></td>
-                <td>5<abbr class="unit" title="squares">sq</abbr></td>
-              </tr>
-              <tr>
-                <td>30<abbr class="unit" title="feet">ft</abbr></td>
-                <td>9,1<abbr class="unit" title="meters">m</abbr></td>
-                <td>6<abbr class="unit" title="squares">sq</abbr></td>
-              </tr>
-              <tr>
-                <td>60<abbr class="unit" title="feet">ft</abbr></td>
-                <td>18,3<abbr class="unit" title="meters">m</abbr></td>
-                <td>12<abbr class="unit" title="squares">sq</abbr></td>
-              </tr>
-              <tr>
-                <td>90<abbr class="unit" title="feet">ft</abbr></td>
-                <td>27,4<abbr class="unit" title="meters">m</abbr></td>
-                <td>18<abbr class="unit" title="squares">sq</abbr></td>
-              </tr>
-              <tr>
-                <td>120<abbr class="unit" title="feet">ft</abbr></td>
-                <td>36,6<abbr class="unit" title="meters">m</abbr></td>
-                <td>24<abbr class="unit" title="squares">sq</abbr></td>
-              </tr>
-            </tbody>
-          </table>
+
+          <form class="inline-form" action="#" data-feet-form>
+            <input class="inline-form__item inline-form__item--number" type="number" value="5" min="0" autocomplete="off" placeholder="Feet" data-feet-ft>
+            <abbr class="unit" title="feet">ft</abbr>
+            &nbsp;
+            <input class="inline-form__item inline-form__item--number" type="number" value="1.5" placeholder="Meters" data-feet-m readonly>
+            <abbr class="unit" title="meters">m</abbr>
+            &nbsp;
+            <input class="inline-form__item inline-form__item--number" type="number" value="1" placeholder="Squares" data-feet-sq readonly>
+            <abbr class="unit" title="squares">sq</abbr>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Pound Converter
+        </div>
+        <div class="block__body">
+
+          <form class="inline-form" action="#" data-pound-form>
+            <input class="inline-form__item inline-form__item--number" type="number" value="1" min="0" autocomplete="off" placeholder="Pounds" data-pound-lb>
+            <abbr class="unit" title="pounds">lb</abbr>
+            &nbsp;
+            <input class="inline-form__item inline-form__item--number" type="number" value="0.4" placeholder="Kilograms" data-pound-kg readonly>
+            <abbr class="unit" title="kilograms">kg</abbr>
+          </form>
+
         </div>
       </div>
     </div>
@@ -781,7 +756,7 @@
           Food & Water
         </div>
         <div class="block__body">
-          <p>A character can go 3 + <abbr class="as as--con" title="Constitution">CON</abbr> days (minimum 1) without food. After that, they suffer 1 level of exhaustion per day.</p>
+          <p>A creature can go 3 + <abbr class="as as--con" title="Constitution">CON</abbr> days (minimum 1) without food. After that, they suffer 1 level of exhaustion per day.</p>
           <p>Drinking less than necessary requires a <span class="dc"><abbr title="Difficulty Class">DC</abbr>15</span> <abbr class="as as--con" title="Constitution">CON</abbr> saving throw. On a fail, suffer 1 level of exhaustion.</p>
         </div>
       </div>
@@ -819,6 +794,63 @@
     <div class="grid__item">
       <div class="block">
         <div class="block__header">
+          Jumping
+        </div>
+        <div class="block__body">
+          <p>You can cover the full distance if you move at least 10<abbr class="unit" title="feet">ft</abbr> immediately before the jump, or half that without moving. Jumping costs movement as usual.</p>
+          <p><strong>Long Jump.</strong> <abbr class="as as--str">STR</abbr> score &times; feet.</p>
+          <p><strong>Landing.</strong> <span class="dc"><abbr title="Difficulty Class">DC</abbr>10</span> <span class="skill">Acrobatics</span> to land on difficult terrain, or fall <span class="condition">prone</span>.</p>
+          <p><strong>High Jump.</strong> <abbr class="as as--str">STR</abbr> modifier + 3<abbr class="unit" title="feet">ft</abbr>.</p>
+          <p><strong>Reach.</strong> You can reach above you a distance equal to the height of the jump + 1 &half; times your height with your arms extended.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Underwater Combat
+        </div>
+        <div class="block__body">
+          <p><strong>Melee Weapon Attack.</strong> Disadvantage on attack rolls for creatures without a swimming speed unless attacking with a dagger, javelin, shortsword, spear or trident.</p>
+          <p><strong>Ranged Weapon Attack.</strong> Disadvantage on attack rolls unless attacking with a crossbow, a net, a javelin, a spear, a trident, a dart, or similar thrown weapons. Automatic miss beyond normal range.</p>
+          <p><strong>Fire Resistance.</strong> When fully immersed in water, creatures and objects are resistant to fire damage.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Squeezing
+        </div>
+        <div class="block__body">
+          <p><strong>Fitting.</strong> A creature can squeeze into a space one size smaller than it.</p>
+          <p><strong>Moving.</strong> A creature moves at half speed through smaller spaces.</p>
+          <p><strong>Penalties.</strong> Disadvantage on attack rolls and <abbr class="as as--dex" title="Dexterity">DEX</abbr> saving throws, and hostile attack rolls have advantage.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Mounted Combat
+        </div>
+        <div class="block__body">
+          <p><strong>Premise.</strong> A creature can mount another creature that is at least one size larger than it.</p>
+          <p><strong>Mounting & Dismounting.</strong> Spend half of your speed to mount or dismount a creature within 5<abbr class="unit" title="feet">ft</abbr>.</p>
+          <p><strong>Controlled Mount.</strong> A trained mount's initiative matches yours, and can only <span class="action">Dash</span>, <span class="action">Disengage</span> or <span class="action">Dodge</span>.</p>
+          <p><strong>Independent Mount.</strong> An independent mount maintains its initiative, and can act and move as it wishes.</p>
+          <p><strong>Falling.</strong> If the mount is moved against its will, or you are knocked <span class="condition">prone</span>, <span class="dc"><abbr title="Difficulty Class">DC</abbr>10</span> <abbr class="as as--dex" title="Dexterity">DEX</abbr> saving throw or fall off, landing <span class="condition">prone</span> beside it. If the mount is knocked <span class="condition">prone</span>, you can spend your reaction to dismount and land safely or fall <span class="condition">prone</span> beside it.</p>
+          <p><strong>Targeting.</strong> If the mount provokes an opportunity attack, the attacker can target you or the mount.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
           Shove
           <svg class="icon--tiny icon--faded icon--house-rule" title="House Rules"><use xlink:href="#house-rule"></svg>
         </div>
@@ -837,7 +869,7 @@
         </div>
         <div class="block__body">
           <p><strong>Casting.</strong> You lose concentration if you cast another spell that requires concentration.</p>
-          <p><strong>Taking damage.</strong> <span class="dc"><abbr title="Difficulty Class">DC</abbr>10</span> or half the damage taken (choose the higher) to maintain concentration.</p>
+          <p><strong>Taking damage.</strong> <span class="dc"><abbr title="Difficulty Class">DC</abbr>10</span> or half the damage taken (choose the higher) <abbr class="as as--con" title="Constitution">CON</abbr> saving throw to maintain concentration.</p>
         </div>
       </div>
     </div>
@@ -849,6 +881,30 @@
         </div>
         <div class="block__body">
           <p>Advantage on an attack roll, ability check or saving throw.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid__item">
+      <div class="block">
+        <div class="block__header">
+          Diagonal Distance Calculator
+        </div>
+        <div class="block__body">
+
+          <p>Accurate distance between points of different altitudes.</p>
+
+          <form class="inline-form" action="#" data-hypotenuse-form>
+            <input class="inline-form__item inline-form__item--main" type="number" min="0" step="5" autocomplete="off" placeholder="Horizontal" data-hypotenuse-x>
+            <abbr class="unit" title="Horizontal">x</abbr>
+            &nbsp;
+            <input class="inline-form__item inline-form__item--main" type="number" min="0" step="5" autocomplete="off" placeholder="Vertical" data-hypotenuse-y>
+            <abbr class="unit" title="Vertical">y</abbr>
+            &nbsp;
+            <input class="inline-form__item inline-form__item--main" type="number" placeholder="Diagonal" data-hypotenuse-result readonly>
+            <abbr class="unit" title="Diagonal">xy</abbr>
+          </form>
+
         </div>
       </div>
     </div>
