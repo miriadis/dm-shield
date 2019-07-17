@@ -88,7 +88,7 @@ $(document).ready(function(){
     var r = $('[data-volume-cilinder-r]').val();
     var r2 = Math.pow(r, 2);
     var y = $('[data-volume-cilinder-y]').val();
-    var ft3 = (pi*r2)*y
+    var ft3 = (pi*r2)*y;
     var gal = Math.round(ft3*7.480543);
     $('[data-volume-cilinder-gal]').val(gal);
   });
