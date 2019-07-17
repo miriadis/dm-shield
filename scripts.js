@@ -50,11 +50,47 @@ $(document).ready(function(){
   $('[data-hypotenuse-x], [data-hypotenuse-y]').on('change keyup', function(){
     var a = $('[data-hypotenuse-x]').val();
     var b = $('[data-hypotenuse-y]').val();
+    var a2 = Math.pow(a, 2);
+    var b2 = Math.pow(b, 2);
     // Calculate square root of a^2+b^2, and round to nearest multiple of 5
-    var c = Math.round(Math.sqrt(a*a+b*b)/5)*5;
+    var c = Math.round(Math.sqrt(a2+b2)/5)*5;
     if($(this).val()){
       $('[data-hypotenuse-result]').val(c);
     };
+  });
+
+  // Sphere volume calculator
+  // When input changes
+  $('[data-volume-sphere-r]').on('change keyup', function(){
+    var pi = Math.PI;
+    var r = $('[data-volume-sphere-r]').val();
+    var r3 = Math.pow(r, 3);
+    var ft3 = (4*pi*r3)/3;
+    var gal = Math.round(ft3*7.480543);
+    $('[data-volume-sphere-gal]').val(gal);
+  });
+
+  // Cuboid volume calculator
+  // When input changes
+  $('[data-volume-cuboid-x], [data-volume-cuboid-y], [data-volume-cuboid-z]').on('change keyup', function(){
+    var x = $('[data-volume-cuboid-x]').val();
+    var y = $('[data-volume-cuboid-y]').val();
+    var z = $('[data-volume-cuboid-z]').val();
+    var ft3 = x*y*z;
+    var gal = Math.round(ft3*7.480543);
+    $('[data-volume-cuboid-gal]').val(gal);
+  });
+
+  // Cilinder volume calculator
+  // When input changes
+  $('[data-volume-cilinder-r], [data-volume-cilinder-y]').on('change keyup', function(){
+    var pi = Math.PI;
+    var r = $('[data-volume-cilinder-r]').val();
+    var r2 = Math.pow(r, 2);
+    var y = $('[data-volume-cilinder-y]').val();
+    var ft3 = (pi*r2)*y
+    var gal = Math.round(ft3*7.480543);
+    $('[data-volume-cilinder-gal]').val(gal);
   });
 
   // Tooltips
