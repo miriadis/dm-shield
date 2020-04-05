@@ -163,6 +163,7 @@ table + table {
 
 .inline-form__label {
   color: var(--color-medium);
+  flex-shrink: 2;
   font-size: var(--font-size-xxs);
   font-weight: 700;
   margin-right: var(--gap-s);
