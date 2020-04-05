@@ -16,9 +16,15 @@
 
   <title>D&D 5th Edition Digital DM Shield</title>
 </head>
-<body>
+<body class="theme--dark">
 
 <svg style="display: none;">
+
+  <!-- Theme -->
+  <symbol id="theme" viewBox="0 0 24 24" style="fill: currentcolor; stroke: currentcolor; stroke-width: 2px; stroke-linecap: round; stroke-linejoin: round;">
+    <circle cx="12" cy="12" r="6" style="fill: none;"/>
+    <path d="M12,6c3.311,0 6,2.689 6,6c0,3.311 -2.689,6 -6,6l0,-12Z" style="stroke: none;"/>
+  </symbol>
 
   <!-- D&D Beyond -->
   <symbol id="logo-dndb" viewBox="0 0 62 59" fill-rule="nonzero" fill="currentcolor" stroke="none">
@@ -201,6 +207,10 @@
   </symbol>
 </svg>
 
+<button class="theme__button" data-theme-switch type="button" title="Switch Theme">
+  <svg class="icon--medium"><use xlink:href="#theme"></svg>
+</button>
+
 <div class="wrap">
 
   <div class="grid grid--main">
@@ -213,13 +223,13 @@
         <div class="block__body">
 
           <form class="inline-form" action="#" data-feet-form>
-            <input class="inline-form__item inline-form__item--number" type="number" value="5" min="0" autocomplete="off" placeholder="Feet" data-feet-ft>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="5" min="0" autocomplete="off" placeholder="Feet" data-feet-ft>
             <abbr class="unit" title="feet">ft</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--number" type="number" value="1.5" placeholder="Meters" data-feet-m readonly>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="1.5" placeholder="Meters" data-feet-m readonly>
             <abbr class="unit" title="meters">m</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--number" type="number" value="1" placeholder="Squares" data-feet-sq readonly>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="1" placeholder="Squares" data-feet-sq readonly>
             <abbr class="unit" title="squares">sq</abbr>
           </form>
 
@@ -235,10 +245,10 @@
         <div class="block__body">
 
           <form class="inline-form" action="#" data-pound-form>
-            <input class="inline-form__item inline-form__item--number" type="number" value="1" min="0" autocomplete="off" placeholder="Pounds" data-pound-lb>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="1" min="0" autocomplete="off" placeholder="Pounds" data-pound-lb>
             <abbr class="unit" title="pounds">lb</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--number" type="number" value="0.4" placeholder="Kilograms" data-pound-kg readonly>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="0.4" placeholder="Kilograms" data-pound-kg readonly>
             <abbr class="unit" title="kilograms">kg</abbr>
           </form>
 
@@ -256,13 +266,13 @@
           <p>Distance between points of different altitudes, in 5<abbr class="unit" title="feet">ft</abbr> increments.</p>
 
           <form class="inline-form" action="#" data-hypotenuse-form>
-            <input class="inline-form__item inline-form__item--main" type="number" min="0" step="5" autocomplete="off" placeholder="Horizontal" data-hypotenuse-x>
+            <input class="inline-form__item inline-form__item--main" type="text" inputmode="numeric" pattern="[0-9]*" min="0" step="5" autocomplete="off" placeholder="Horizontal" data-hypotenuse-x>
             <abbr class="unit" title="horizontal">x</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--main" type="number" min="0" step="5" autocomplete="off" placeholder="Vertical" data-hypotenuse-y>
+            <input class="inline-form__item inline-form__item--main" type="text" inputmode="numeric" pattern="[0-9]*" min="0" step="5" autocomplete="off" placeholder="Vertical" data-hypotenuse-y>
             <abbr class="unit" title="vertical">y</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--main" type="number" placeholder="Diagonal" data-hypotenuse-result readonly>
+            <input class="inline-form__item inline-form__item--main" type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Diagonal" data-hypotenuse-result readonly>
             <abbr class="unit" title="diagonal">xy</abbr>
           </form>
 
@@ -280,10 +290,10 @@
           <p>Volume of a sphere in gallons based on its radius in feet.</p>
 
           <form class="inline-form" action="#" data-volume-sphere-form>
-            <input class="inline-form__item inline-form__item--number" type="number" value="5" min="0" step="5" autocomplete="off" placeholder="Radius" data-volume-sphere-r>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="5" min="0" step="5" autocomplete="off" placeholder="Radius" data-volume-sphere-r>
             <abbr class="unit" title="radius">r</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--number" type="number" value="3920" placeholder="Gallons" data-volume-sphere-gal readonly>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="3920" placeholder="Gallons" data-volume-sphere-gal readonly>
             <abbr class="unit" title="american gallon">gal</abbr>
           </form>
 
@@ -301,16 +311,16 @@
           <p>Volume of a cuboid in gallons based on its dimensions in feet.</p>
 
           <form class="inline-form" action="#" data-volume-cuboid-form>
-            <input class="inline-form__item inline-form__item--number" type="number" value="5" min="0" step="5" autocomplete="off" placeholder="Length" data-volume-cuboid-x>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="5" min="0" step="5" autocomplete="off" placeholder="Length" data-volume-cuboid-x>
             <abbr class="unit" title="length">x</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--number" type="number" value="5" min="0" step="5" autocomplete="off" placeholder="Height" data-volume-cuboid-y>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="5" min="0" step="5" autocomplete="off" placeholder="Height" data-volume-cuboid-y>
             <abbr class="unit" title="height">y</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--number" type="number" value="5" min="0" step="5" autocomplete="off" placeholder="Depth" data-volume-cuboid-z>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="5" min="0" step="5" autocomplete="off" placeholder="Depth" data-volume-cuboid-z>
             <abbr class="unit" title="depth">z</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--number" type="number" value="935" placeholder="Gallons" data-volume-cuboid-gal readonly>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="935" placeholder="Gallons" data-volume-cuboid-gal readonly>
             <abbr class="unit" title="american gallon">gal</abbr>
           </form>
 
@@ -328,46 +338,15 @@
           <p>Volume of a cilinder in gallons based on its radius and height in feet.</p>
 
           <form class="inline-form" action="#" data-volume-cilinder-form>
-            <input class="inline-form__item inline-form__item--number" type="number" value="5" min="0" step="5" autocomplete="off" placeholder="Radius" data-volume-cilinder-r>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="5" min="0" step="5" autocomplete="off" placeholder="Radius" data-volume-cilinder-r>
             <abbr class="unit" title="radius">r</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--number" type="number" value="10" min="0" step="5" autocomplete="off" placeholder="Height" data-volume-cilinder-y>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="10" min="0" step="5" autocomplete="off" placeholder="Height" data-volume-cilinder-y>
             <abbr class="unit" title="height">y</abbr>
             &nbsp;
-            <input class="inline-form__item inline-form__item--number" type="number" value="5875" placeholder="Gallons" data-volume-cilinder-gal readonly>
+            <input class="inline-form__item inline-form__item--number" type="text" inputmode="numeric" pattern="[0-9]*" value="5875" placeholder="Gallons" data-volume-cilinder-gal readonly>
             <abbr class="unit" title="american gallon">gal</abbr>
           </form>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="grid__item">
-      <div class="block">
-        <div class="block__header">
-          Common circle areas
-        </div>
-        <div class="block__body">
-
-          <div class="areas">
-            <figure class="areas__item">
-              <figcaption class="areas__legend">5<abbr class="unit" title="feet">ft</abbr></figcaption>
-              <svg class="areas__content" viewbox="0 0 90 90">
-                <rect class="areas__reference" x="40" y="40" width="10" height="10"></rect>
-                <circle class="areas__circle" cx="45" cy="45" r="10"></circle>
-                <path class="areas__translation" x="20" y="20" d="M 40 30 L 50 30 L 50 40 L 60 40 L 60 50 L 50 50 L 50 60 L 40 60 L 40 50 L 30 50 L 30 40 L 40 40 Z"></path>
-              </svg>
-            </figure>
-
-            <figure class="areas__item">
-              <figcaption class="areas__legend">10<abbr class="unit" title="feet">ft</abbr></figcaption>
-              <svg class="areas__content" viewbox="0 0 90 90">
-                <rect class="areas__reference" x="40" y="40" width="10" height="10"></rect>
-                <circle class="areas__circle" cx="45" cy="45" r="20"></circle>
-                <path class="areas__translation" x="20" y="20" d="M 40 20 L 50 20 L 50 30 L 60 30 L 60 40 L 70 40 L 70 50 L 60 50 L 60 60 L 50 60 L 50 70 L 40 70 L 40 60 L 30 60 L 30 50 L 20 50 L 20 40 L 30 40 L 30 30 L 40 30 Z"></path>
-              </svg>
-            </figure>
-          </div>
 
         </div>
       </div>
@@ -1030,11 +1009,12 @@
         </div>
         <div class="block__body">
           <p>Spend an Attack action to grapple a creature.</p>
-          <p><strong>Premise.</strong> Use an Attack action to grapple a creature up to one size larger than you, within your reach.<p>
+          <p><strong>Premise.</strong> Grapple a creature up to one size larger than you, within your reach.<p>
           <p><strong>Check.</strong> <span class="skill">Athletics</span> versus <span class="skill">Athletics</span> or <span class="skill">Acrobatics</span>.</p>
           <p><strong>Grappled.</strong> Target's speed becomes 0, it can't benefit from any bonus to its speed, and has disadvantage on attack rolls.</p>
           <p><strong>Escaping.</strong> Target spends its action to roll the check again.</p>
           <p><strong>Dragging.</strong> You can move with the grappled creature at half speed, or at normal speed if it's two or more sizes smaller than you.</p>
+          <p><strong>Criticals.</strong> When the grappler attacks the grappled creature, 18 on the dice is considered a critical hit.</p>
         </div>
       </div>
     </div>
@@ -1060,8 +1040,8 @@
           <svg class="icon--tiny icon--faded icon--house-rule" title="House Rules"><use xlink:href="#house-rule"></svg>
         </div>
         <div class="block__body">
-          <p><strong>Overrun.</strong> <span class="skill">Athletics</span> versus <span class="skill">Athletics</span> to move through the target's space with an action or bonus action. Advantage if bigger than the target.</p>
-          <p><strong>Tumble.</strong> <span class="skill">Acrobatics</span> versus <span class="skill">Acrobatics</span> to move through the target's space. Advantage if smaller than the target.</p>
+          <p><strong>Overrun.</strong> <span class="skill">Athletics</span> versus <span class="skill">Athletics</span> to move through an enemy's space with an action or bonus action. On a failure, doesn't move and gets knocked prone. Advantage if bigger than the target.</p>
+          <p><strong>Tumble.</strong> <span class="skill">Acrobatics</span> versus <span class="skill">Athletics</span> to move through an enemy's space. On a failure, doesn't move and gets knocked prone. Advantage if smaller than the target.</p>
         </div>
       </div>
     </div>
@@ -1202,14 +1182,16 @@
 
           <form class="inline-form" action="https://www.dndbeyond.com/monsters" method="get" target="_blank">
             <input type="hidden" name="sort" value="cr">
-            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Monster Name">
-            <input class="inline-form__item" type="submit" value="Search by Name">
+            <label class="inline-form__label" for="filter-search-monster">Monster name</label>
+            <input class="inline-form__item inline-form__item--main" type="search" id="filter-search-monster" name="filter-search" value="" autocomplete="off" placeholder="Ex.: Kobold">
+            <input class="inline-form__item" type="submit" value="Search">
           </form>
 
           <form class="inline-form" action="https://www.dndbeyond.com/monsters" method="get" target="_blank">
             <input type="hidden" name="sort" value="cr">
+            <label class="inline-form__label" for="filter-cr-min"><abbr title="Challenge Rating">CR</abbr></label>
             <label class="inline-form__item inline-form__item--spaced"><input type="checkbox" title="Split Min & Max" data-cr-split></label>
-            <select class="inline-form__item inline-form__item--main inline-form__item--spaced" name="filter-cr-min" data-cr-min>
+            <select class="inline-form__item inline-form__item--main inline-form__item--spaced" id="filter-cr-min" name="filter-cr-min" data-cr-min>
               <option value="1">0</</option>
               <option value="2">1/8</option>
               <option value="3">1/4</option>
@@ -1282,7 +1264,7 @@
               <option value="34">29</option>
               <option value="35">30</option>
             </select>
-            <input type="submit" value="Search by CR">
+            <input type="submit" value="Search">
           </form>
 
         </div>
@@ -1299,8 +1281,9 @@
 
           <form class="inline-form" action="https://www.dndbeyond.com/spells" method="get" target="_blank">
             <input type="hidden" name="sort" value="level">
-            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Spell Name">
-            <input class="inline-form__item" type="submit" value="Search by Name">
+            <label class="inline-form__label" for="filter-search-spell">Spell name</label>
+            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search-spell" name="filter-search" value="" autocomplete="off" placeholder="Ex.: Burning Hands">
+            <input class="inline-form__item" type="submit" value="Search">
           </form>
 
         </div>
@@ -1316,13 +1299,15 @@
         <div class="block__body">
 
           <form class="inline-form" action="https://www.dndbeyond.com/equipment" method="get" target="_blank">
-            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Equipment Name">
-            <input class="inline-form__item" type="submit" value="Search by Name">
+            <label class="inline-form__label" for="filter-search-equipment">Equipment name</label>
+            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search-equipment" name="filter-search" value="" autocomplete="off" placeholder="Ex.: Shovel">
+            <input class="inline-form__item" type="submit" value="Search">
           </form>
 
           <form class="inline-form" action="https://www.dndbeyond.com/magic-items" method="get" target="_blank">
-            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search" value="" autocomplete="off" placeholder="Magic Item Name">
-            <input class="inline-form__item" type="submit" value="Search by Name">
+            <label class="inline-form__label" for="filter-search-magicitem">Magic item name</label>
+            <input class="inline-form__item inline-form__item--main" type="search" name="filter-search-magicitem" name="filter-search" value="" autocomplete="off" placeholder="Ex.: Bag of Holding">
+            <input class="inline-form__item" type="submit" value="Search">
           </form>
 
         </div>
@@ -1340,63 +1325,6 @@
           <p><strong>Choose creatures.</strong> <span class="dc"><abbr title="Difficulty Class">DC</abbr>16</span> to choose creatures specifically.</p>
           <p><strong>Physical feature.</strong> <span class="dc"><abbr title="Difficulty Class">DC</abbr>13</span> to randomly summon creatures of one type, size, alignment, armor class, hit points average, speed or ability score.</p>
           <p>On a failure, creatures are summoned randomly.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="grid__item">
-      <div class="block">
-        <div class="block__header">
-          Conjure Woodland Beings
-          <svg class="icon--tiny icon--faded icon--dndb" title="D&D Beyond"><use xlink:href="#logo-dndb"></svg>
-        </div>
-        <div class="block__body">
-          <table>
-            <thead>
-              <tr>
-                <th><abbr title="Quantity">Qty.</abbr></th>
-                <th><abbr title="Challenge Rating">CR</abbr></th>
-                <th>Creature</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>8</td>
-                <td>1/4</td>
-                <td>
-                  <a href="https://www.dndbeyond.com/monsters/blink-dog" target="_blank">Blink Dog</a>,
-                  <a href="https://www.dndbeyond.com/monsters/pixie" target="_blank">Pixie</a>,
-                  <a href="https://www.dndbeyond.com/monsters/sprite" target="_blank">Sprite</a>
-                </td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>1/2</td>
-                <td>
-                  <a href="https://www.dndbeyond.com/monsters/darkling" target="_blank">Darkling</a>,
-                  <a href="https://www.dndbeyond.com/monsters/satyr" target="_blank">Satyr</a>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>1</td>
-                <td>
-                  <a href="https://www.dndbeyond.com/monsters/dryad" target="_blank">Dryad</a>,
-                  <a href="https://www.dndbeyond.com/monsters/quickling" target="_blank">Quickling</a>
-                </td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>
-                  <a href="https://www.dndbeyond.com/monsters/darkling-elder" target="_blank">Darkling Elder</a>,
-                  <a href="https://www.dndbeyond.com/monsters/meenlock" target="_blank">Meenlock</a>,
-                  <a href="https://www.dndbeyond.com/monsters/nereid" target="_blank">Nereid</a>,
-                  <a href="https://www.dndbeyond.com/monsters/sea-hag" target="_blank">Sea Hag</a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </div>
     </div>

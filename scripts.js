@@ -100,4 +100,9 @@ $(document).ready(function(){
     theme: 'tooltipster-shadow'
   });
 
+  // Toggle theme
+  $('[data-theme-switch]').on('click', function(){
+    $('body').toggleClass('theme--dark');
+  });
+
 });
