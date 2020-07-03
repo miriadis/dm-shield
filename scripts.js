@@ -102,7 +102,7 @@ $(document).ready(function(){
 
   // Toggle theme
   $('[data-theme-switch]').on('click', function(){
-    $('body').toggleClass('theme--dark');
+    $('html').toggleClass('theme--dark');
   });
 
 });

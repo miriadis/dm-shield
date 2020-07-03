@@ -294,17 +294,17 @@ input[type="number"]:read-only {
   .grid--main {
     columns: 4;
   }
-  .grid--half {
-    columns: 3;
-  }
 }
 
 @media screen and (min-width: 2000px) {
   .grid--main {
     columns: 5;
   }
-  .grid--half {
-    columns: 4;
+}
+
+@media screen and (min-width: 2400px) {
+  .grid--main {
+    columns: 6;
   }
 }
 
@@ -405,4 +405,14 @@ tr + tr {
 
 .cell__detail {
   color: var(--color-medium);
+}
+
+.calendar__days {
+  vertical-align: top;
+}
+
+.calendar__day {
+  background: var(--color-faded);
+  border: 1px solid var(--color-background);
+  padding: var(--gap-m);
 }
