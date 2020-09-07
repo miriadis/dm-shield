@@ -49,7 +49,7 @@
 .theme__button {
   border-radius: 50%;
   bottom: var(--gap-l);
-  box-shadow: 0 0 1em rgba(0, 0, 0, .3);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
   padding: var(--gap-s);
   position: fixed;
   right: var(--gap-l);
@@ -407,12 +407,68 @@ tr + tr {
   color: var(--color-medium);
 }
 
+
+/* Calendar */
+
+.calendar {
+}
+
+.calendar__month + .calendar__month {
+  margin-top: var(--gap-xxl);
+}
+
+.calendar__month-title {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--gap-l);
+}
+
+.calendar__month-number {
+  color: var(--color-medium);
+}
+
+.calendar__weekdays {
+  text-align: center;
+}
+
+.calendar__weekday {
+  padding-left: 0;
+}
+
 .calendar__days {
   vertical-align: top;
 }
 
 .calendar__day {
   background: var(--color-faded);
-  border: 1px solid var(--color-background);
+  border: var(--gap-s) solid var(--color-main);
+  height: 10rem;
   padding: var(--gap-m);
+  width: 16.666%;
+}
+
+.calendar__day--today {
+  background: var(--color-background);
+}
+
+.calendar__day-number {
+  color: var(--color-highlight);
+  float: left;
+}
+
+.calendar__day-moonphase {
+  float: right;
+  font-size: var(--font-size-xs);
+  text-shadow: 0 0 var(--gap-xxs) var(--color-foreground);
+}
+
+.calendar__day-events {
+  clear: both;
+  color: var(--color-medium);
+  font-size: var(--font-size-xs);
+  list-style: square;
+  padding-top: var(--gap-m);
+}
+
+.calendar__week:hover {
+  background: inherit;
 }
